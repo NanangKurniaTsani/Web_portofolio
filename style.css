@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #35424a;
+    background-color: #2C3E50;
     color: #ffffff;
     text-align: center;
     padding: 1rem;
@@ -98,11 +98,12 @@ h2 {
 }
 
 #links ul li a {
-    color: #003366;
+    color: #171718;
     text-decoration: none;
     font-weight: bold;
 }
 
 #links ul li a:hover {
     text-decoration: underline;
+    color: #3498DB;
 }
