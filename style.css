@@ -1,109 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', Arial, sans-serif; /* Font utama dengan fallback Arial dan sans-serif */
+    line-height: 1.6; /* Memberikan ruang antar baris teks */
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #333; /* Warna teks utama (abu gelap) */
+    background-color: #f4f4f4; /* Latar belakang abu-abu terang */
 }
 
 header {
-    background-color: #2C3E50;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
+    background-color: #2C3E50; /* Warna navy blue untuk header */
+    color: #ffffff; /* Warna teks putih */
+    text-align: center; /* Teks berada di tengah */
+    padding: 1.5rem; /* Padding untuk ruang dalam header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Memberikan bayangan pada header */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 3px solid #ffffff;
+    width: 150px; /* Lebar gambar profil */
+    height: 150px; /* Tinggi gambar profil */
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+    margin-bottom: 1rem; /* Jarak bawah dengan elemen lain */
+    border: 3px solid #ffffff; /* Garis tepi putih di sekitar gambar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Efek bayangan gambar */
 }
 
 nav {
-    background-color: #003366;
-    padding: 0.5rem;
+    background-color: #003366; /* Warna biru tua untuk navigasi */
+    padding: 0.7rem; /* Padding untuk ruang dalam navigasi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan tipis pada navigasi */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 10px;
+    display: flex; /* Mengatur daftar sebagai fleksibel untuk menyusun horizontal */
+    justify-content: center; /* Menempatkan item di tengah */
+    gap: 20px; /* Jarak antar item */
+    margin: 0; /* Menghapus margin default ul */
+    padding: 0; /* Menghapus padding default ul */
+    list-style: none; /* Menghapus bullet pada daftar */
 }
 
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+    color: #ffffff; /* Warna teks putih untuk tautan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    font-weight: 600; /* Membuat teks lebih tebal */
+    transition: color 0.3s ease; /* Transisi efek hover warna */
+}
+
+nav ul li a:hover {
+    color: #3498DB; /* Warna biru terang saat hover */
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+    max-width: 900px; /* Lebar maksimum konten utama */
+    margin: 30px auto; /* Memberikan margin atas dan bawah, dan memusatkan horizontal */
+    padding: 0 20px; /* Padding sisi kiri dan kanan */
 }
 
 .section {
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    background-color: #ffffff; /* Latar belakang putih untuk setiap section */
+    margin-bottom: 20px; /* Jarak bawah antar section */
+    padding: 25px; /* Padding untuk ruang dalam section */
+    border-radius: 8px; /* Membuat sudut section membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan ringan */
+    display: none; /* Default: sembunyikan semua section */
 }
 
 .section.active {
-    display: block;
+    display: block; /* Tampilkan hanya section yang memiliki kelas "active" */
 }
 
 h2 {
-    color: #003366;
-}
-
-.map-container {
-    margin-top: 20px;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
+    color: #2C3E50; /* Warna navy blue untuk heading */
+    border-bottom: 2px solid #3498DB; /* Garis bawah biru terang */
+    padding-bottom: 10px; /* Jarak antara teks dan garis bawah */
 }
 
 .btn {
-    display: inline-block;
-    background-color: #003366;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    display: inline-block; /* Menjadikan tombol sebagai elemen blok inline */
+    background-color: #3498DB; /* Warna latar belakang biru terang */
+    color: #ffffff; /* Warna teks putih */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    text-decoration: none; /* Menghapus garis bawah pada tombol */
+    border-radius: 5px; /* Membuat sudut tombol membulat */
+    transition: background-color 0.3s ease; /* Transisi efek hover latar tombol */
 }
 
-#links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#links ul li {
-    margin-bottom: 10px;
+.btn:hover {
+    background-color: #2C3E50; /* Warna navy blue saat hover */
 }
 
 #links ul li a {
-    color: #171718;
-    text-decoration: none;
-    font-weight: bold;
+    color: #333; /* Warna teks abu gelap */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    font-weight: 600; /* Membuat teks lebih tebal */
 }
 
 #links ul li a:hover {
-    text-decoration: underline;
-    color: #3498DB;
+    color: #3498DB; /* Warna biru terang saat hover */
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
 }
